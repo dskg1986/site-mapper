@@ -75,7 +75,6 @@ export class MapService {
 		});
 		var loc = omnivore.geojson(fileLocation, null, customLayer)
 		.on('ready', function() {
-			console.log("got here")
 			myMap.fitBounds(loc.getBounds());
 		}).addTo(myMap);;
 
