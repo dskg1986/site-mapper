@@ -78,7 +78,7 @@ export class MapService {
 		// create mymap and default map, zoom, and location.
 		var myMap = L.map('map', {
 			center : [39.754264, -105.002441],
-			zoom :,
+			zoom : 12,
 			layers: [topoMap]
 		});
 		
