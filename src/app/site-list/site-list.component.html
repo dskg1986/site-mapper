@@ -1,0 +1,24 @@
+<div class="row row-runs">
+		<h2 class="heding">Site List</h2>
+		<hr />
+		<div class="summary">
+			<p>Total Sites: {{ totalSites }}</p>
+		</div>
+		<hr />
+		<table class="table table-striped table-bordered table-hover">
+			<thead>
+				<tr>
+					<th>Site Name</th>
+					<th>Type</th>
+					<th>Comments</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr *ngFor="let site of sites">
+					<td><a [routerLink] = "['/sites', site.id]">{{ site.name }}</a></td>
+					<td>{{ site.type }}</td>
+					<td>{{ site.comments }}</td>
+				</tr>
+			</tbody>
+		</table>
+</div>

@@ -1,0 +1,22 @@
+ <nav id="navigation" class="navbar navbar-toggleable-md navbar-dark bg-faded">
+	<button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+		<span class="navbar-toggler-icon"></span>
+	</button>
+	<a class="navbar-brand" href="#">AMSCM</a>
+	<div class="collapse navbar-collapse" id="navbarSupportedContent">
+		<ul class="nav navbar-nav  ml-auto">
+			<li class="nav-item active"><a class="nav-link" href="/"><span class="fa fa-home"></span></a></li>
+			<li class="nav-item dropdown">
+				<a class="nav-link" href="" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Sites <span class="fa fa-ellipsis-v"></span></a>
+				<div class="dropdown-menu">
+					<a class="dropdown-item" href="/sites" title="Search Sites">Search Sites</a>
+				</div>
+			</li>
+			<li class="nav-item"><a class="nav-link" href="/map">Map</a></li>
+			<li class="nav-item"><a class="nav-link" href="#" onclick="signOut();">Sign out</a></li>
+		</ul>
+	</div>
+</nav>
+<div id="app-route">
+	<router-outlet></router-outlet>
+</div>
